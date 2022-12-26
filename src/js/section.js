@@ -14,12 +14,6 @@ export function assign(container, sectionTemplate, inputTemplate) {
     const sectionsContainer = container.querySelector('.cmp-sections-container');
 
     container.addEventListener('click', (ev) => {
-        if(ev.target.matches('.cmd-remove-section')) {
-            remove(sectionsContainer, sectionTemplate, inputTemplate);
-        }
-    });
-
-    container.addEventListener('click', (ev) => {
         if (ev.target.matches('.cmd-add-section')) {
           add(sectionsContainer, sectionTemplate, inputTemplate);
         }
